@@ -24,6 +24,8 @@ import {
     tripguide,
     threejs,
   } from "../assets";
+
+
   
   export const navLinks = [
     {
@@ -42,19 +44,19 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Software Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Web Application developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Automobile Tuner",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Athelete",
       icon: creator,
     },
   ];
