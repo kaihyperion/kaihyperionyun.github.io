@@ -1,28 +1,28 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    jellysmack,
+    ama,
+    python,
+    aws,
+    jupyter,
+    c,
+    matlab,
+    coding,
+    browser,
+    scale,
+    startup,
+    resume,
   } from "../assets";
 
 
@@ -40,28 +40,53 @@ import {
       id: "contact",
       title: "Contact",
     },
+    {
+      id: "resume",
+      title: "Resume",
+      file: resume,
+    },
   ];
   
   const services = [
     {
       title: "Software Developer",
-      icon: web,
+      icon: coding,
     },
     {
       title: "Web Application developer",
-      icon: mobile,
+      icon: browser,
     },
     {
       title: "Automobile Tuner",
-      icon: backend,
+      icon: scale,
     },
     {
-      title: "Athelete",
-      icon: creator,
+      title: "Startup Enthusiast",
+      icon: startup,
     },
   ];
   
   const technologies = [
+    {
+      name: "python",
+      icon: python,
+    },
+    {
+      name: "AWS",
+      icon: aws,
+    },
+    {
+      name: "Jupyter",
+      icon: jupyter,
+    },
+    {
+      name: "C",
+      icon: c,
+    },
+    {
+      name: "Matlab",
+      icon: matlab,
+    },
     {
       name: "HTML 5",
       icon: html,
@@ -75,16 +100,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -106,97 +123,37 @@ import {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Founding Software Engineer",
+      company_name: "Authentic Media Ascension",
+      icon: ama,
+      iconBg: "black",
+      date: "October 2021 - April 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "The first founding engineer for the startup, in charge of automating and optimizing data aggregation, and developing the first core internal app prototype that harnesses various APIs to dynamically retrieve and present the snippet and statistics metadata tailored to user preference",
+        "Drove the entire spectrum of the company’s tech strategy and initiatives, encompassing data extraction, migrating from manual Excel process to Google’s BigQuery database storage solution, and advanced regression analysis powered by machine learning",
+        "Generated over $500,000 in revenue by leading the digital transformation at a growth agency, optimizing operations and strategies to drive substantial financial growth",
+        "Engineered a seamless transformation from CSV to SQL relational database, orchestrating the deployment of a cloud server enabling streamlined integration into Tableau dashboards and facilitated data retrieval, enhancing the client consulting experience",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Lead Software Engineer",
+      company_name: "Jellysmack",
+      icon: jellysmack,
+      iconBg: "black",
+      date: "April 2022 - November 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Guided and collaborated with Jellysmack software engineers and managers in successfully delivering critical projects such as automating company-wide analyses and spearheading the deployment of an internal web application",
+        "Architected a robust Flask micro-framework for the backend server, orchestrating seamless handling of both GET and POST requests from clients and enabling data analysis, visualization, and delivery via HTTP responses",
+        "Implemented OAUTH2.0 authorization flow and securely stored user session API keys in an SQL database",
+        "Wrote code documentation that detailed every features and functions of the internal web app",
       ],
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
   
   const projects = [
     {
@@ -264,4 +221,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

@@ -2,7 +2,28 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import React, { useEffect, useRef } from 'react';
+import Typed from 'typed.js';
+import { SectionWrapper } from "../hoc";
+
 const Hero = () => {
+  const typeTarget = useRef( null);
+  useEffect(() => {
+    const options = {
+      strings: ['Software engineer', 'Founding Developer', 'Data analyst', 'Cancer Survivor'],
+      typeSpeed: 90,
+      backSpeed: 50,
+      backDelay: 1000,
+      loop: true
+    };
+
+    const hi = new Typed(typeTarget.current, options);
+
+    return () => {
+      hi.destroy();
+    };
+  }, []);
+
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingx} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
@@ -11,8 +32,9 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient'/>
         </div>
         <div>
-          <h1 className = {`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Kai</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <h1 className = {`${styles.heroHeadText} text-white`}>I am <span className='text-[#00eeff]'>Kai</span></h1>
+          <h3 className = {`${styles.heroSubText}`}> and I am a <span ref={typeTarget} className='text-[#00eeff]'></span></h3>
+          <p className={`${styles.heroSubSubText} mt-2 text-white-100`}>
             I develop web applications, websites, <br className='sm:block hidden' /> and data analytics tools.
           </p>
         </div>
@@ -42,4 +64,5 @@ const Hero = () => {
   )
 }
 
-export default Hero
+// export default Hero
+export default SectionWrapper(Hero, "Hero")
