@@ -5,6 +5,7 @@ import { ComputersCanvas } from './canvas';
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { SectionWrapper } from "../hoc";
+import { profilePic } from '../assets';
 
 const Hero = () => {
   const typeTarget = useRef( null);
@@ -30,17 +31,25 @@ const Hero = () => {
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915eff]'/>
           <div className='w-1 sm:h-80 h-40 violet-gradient'/>
+
         </div>
+        
         <div>
           <h1 className = {`${styles.heroHeadText} text-white`}>I am <span className='text-[#00eeff]'>Kai</span></h1>
           <h3 className = {`${styles.heroSubText}`}> and I am a <span ref={typeTarget} className='text-[#00eeff]'></span></h3>
           <p className={`${styles.heroSubSubText} mt-2 text-white-100`}>
-            I develop web applications, websites, <br className='sm:block hidden' /> and data analytics tools.
+            I develop web applications, AI, <br className='sm:block hidden' /> and data analytics tools.
           </p>
+
         </div>
+        <img src={profilePic} alt="Kai's Profile" className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-[300px] rounded-full border-4 border-[#00eeff]"/>
+
 
       </div>
-      <ComputersCanvas />
+
+      {/* <ComputersCanvas /> */}
+      {/* <img src={profilePic} alt="Kai's Profile" className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-[300px] rounded-full border-4 border-[#00eeff]"/> */}
+      
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

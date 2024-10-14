@@ -24,16 +24,18 @@ import c from "./tech/C.png";
 import matlab from "./tech/matlab.png";
 
 
-
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 import jellysmack from "./company/jellysmack.png";
 import ama from "./company/ama_logo.webp";
 
 import resume from "./resume_final.pdf";
+
+import knightlab from "./knightlab.png";
+
+import profilePic from "./portrait.jpg";
+
+import californiaPredictor from "./californiaPredictor.png";
+
+import jobappTool from "./jobappTool.jpg";
 
 export {
   logo,
@@ -49,9 +51,6 @@ export {
   reactjs,
   tailwind,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
   jellysmack,
   ama,
   python,
@@ -64,4 +63,8 @@ export {
   scale,
   startup,
   resume,
+  knightlab,
+  profilePic,
+  californiaPredictor,
+  jobappTool
 };

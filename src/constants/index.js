@@ -7,9 +7,6 @@ import {
     nodejs,
     mongodb,
     git,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     jellysmack,
     ama,
@@ -23,6 +20,9 @@ import {
     scale,
     startup,
     resume,
+    knightlab,
+    californiaPredictor,
+    jobappTool
   } from "../assets";
 
 
@@ -41,6 +41,11 @@ import {
       title: "Contact",
     },
     {
+      id: "github",
+      title: "Github",
+      link: "https://www.github.com/kaihyperion"
+    },
+    {
       id: "resume",
       title: "Resume",
       file: resume,
@@ -57,11 +62,11 @@ import {
       icon: browser,
     },
     {
-      title: "Automobile Tuner",
+      title: "Deep learning / Machine Learning",
       icon: scale,
     },
     {
-      title: "Startup Enthusiast",
+      title: "Startup Developer",
       icon: startup,
     },
   ];
@@ -140,16 +145,16 @@ import {
       ],
     },
     {
-      title: "Lead Software Engineer",
-      company_name: "Jellysmack",
+      title: "Software Engineer",
+      company_name: "Keli Network",
       icon: jellysmack,
       iconBg: "black",
       date: "April 2022 - November 2022",
       points: [
         "Guided and collaborated with Jellysmack software engineers and managers in successfully delivering critical projects such as automating company-wide analyses and spearheading the deployment of an internal web application",
         "Architected a robust Flask micro-framework for the backend server, orchestrating seamless handling of both GET and POST requests from clients and enabling data analysis, visualization, and delivery via HTTP responses",
-        "Implemented OAUTH2.0 authorization flow and securely stored user session API keys in an SQL database",
-        "Wrote code documentation that detailed every features and functions of the internal web app",
+        "Secured CEO approval for company-wide implementation after presenting app demos to C-suite executives, and implemented OAuth 2.0 authorization for secure access to hundreds of YouTube accounts.",
+        "Developed comprehensive tests to ensure app reliability and fast issue resolution.",
       ],
     },
   ];
@@ -157,67 +162,120 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "AMA X Jellysmack Internal Data Analysis Tool",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Developed a web application that enables users to dynamically retrieve and present the snippet and statistics metadata tailored to user preference.",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "jupyter",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Google Data API",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "StreamLit",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
+          name: "Matplotlib",
+          color: "blue-text-gradient",
+        }
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: jellysmack,
+      source_code_link: "https://www.ama-digital.com/",
     },
     {
-      name: "Job IT",
+      name: "Partisanship Detector",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Created new solution to computational journalism that enables journalists to maintain unbiased ground in their reporting by detecting politcally charged language in their articles.",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "distill-BERT",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Bi-LSTM",
+          color: "green-text-gradient",
+        },
+        {
+          name: "JavaScript/CSS/HTML",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: knightlab,
+      source_code_link: "https://www.mccormick.northwestern.edu/news/articles/2021/06/Interdisciplinary-teams-present-new-solutions-in-computational-journalism/",
     },
     {
-      name: "Trip Guide",
+      name: "California Housing Price Predictor",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Harnessed with Scikit-learn and multiple ensembled regression models (Linear, Decision Tree, Random Forest, and Support Vector) with full Dataset pipeline, I aimed to find a predictor of Californian house price with given attributes ",
       tags: [
         {
-          name: "nextjs",
+          name: "Machine Learning",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Regression",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Decision Tree / Random Forest",
+          color: "green-text-gradient",
+        },
+        {
+          name: "GridSearchCV",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: californiaPredictor,
+      source_code_link: "https://kaihyperion-housingpricepredictor-app-7djwmv.streamlit.app/",
+    },
+    {
+      name: "LLM-Powered Job Application Automation Tool",
+      description:
+        "Developed a Chrome extension powered by GPT-4 that automates job applications by intelligently mapping and autofilling user details based on form structures, leveraging secure backend services with Express.js and Node.js for seamless communication and field mapping, while integrating Chrome APIs to ensure smooth interactions between background and content scripts for an optimized user experience.",
+      tags: [
+        {
+          name: "LLM-Integration (GPT-4o-mini)",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Chrome Extension",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Node.js",
+          color: "green-text-gradient"
+        },
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Backend with Express.js",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "JavaScript",
+          color: "orange-text-gradient"
+        },
+        {
+          name: "Error handling",
+          color: "pink-text-gradient"
+        }
+      ],
+      image: jobappTool,
+      source_code_link: "https://github.com/kaihyperion/Job-App-Extension",
     },
   ];
   

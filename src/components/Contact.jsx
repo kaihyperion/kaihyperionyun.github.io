@@ -6,8 +6,11 @@ import {styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import { l } from 'maath/dist/misc-19a3ec46.esm';
 
-
+// template_ffamwx3
+// service_gzswgcx
+// XUcnzFJheMwxAEe2e
 
 const Contact = () => {
   const formRef = useRef();
@@ -18,9 +21,44 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {}
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {}
+    setForm({ ...form, [name]: value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      'service_gzswgcx',
+      'template_ffamwx3',
+      {
+        from_name: form.name,
+        to_name: 'Kai',
+        from_email: form.email,
+        to_email: 'kyperion.workmode@gmail.com',
+        message: form.message,
+      },
+      'XUcnzFJheMwxAEe2e'
+      )
+      .then(() => {
+        setLoading(false);
+        alert('Thank you! I will get back to you soon.');
+
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        })
+      }, (error) => {
+        setLoading(false);
+
+        console.log(error);
+        alert('Sorry, something went wrong. Try emailing kyperion.workmode@gmail.com');
+      })
+  }
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div

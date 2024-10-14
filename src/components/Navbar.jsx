@@ -40,9 +40,16 @@ const Navbar = () => {
                 setActive(Link.title)
               }
             >
-              {Link.title !== 'Resume' ? (
+              {Link.id === 'github' ? (
+                <a href={Link.link} target="_blank" rel="noopener noreferrer">
+                  {Link.title}
+                </a>
+              ): Link.title !== 'Resume' ? (
                 <a href={`#${Link.id}`}>{Link.title}</a>
-              ) : ( <a href={`${Link.file}`} download="KaiYun_resume.pdf">{Link.title}</a> 
+              ) : (
+                <a href={`${Link.file}`} download = "KaiYun_resume.pdf">
+                  {Link.title}
+                </a>
               )}
             </li>
           ))}
